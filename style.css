@@ -1,16 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
+.hero-section {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color for better contrast */
     text-align: center;
-    padding: 50px;
-background-image: url('HeroImage.png');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
-}
-h1 {
-    color: #333;
-}
-p {
-    color: #666;
 }
