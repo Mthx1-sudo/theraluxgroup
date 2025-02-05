@@ -5,41 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theralux Group</title>
     <link rel="stylesheet" href="tgroup/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Theralux Group</h1>
-            <p>Innovating the future across industries.</p>
-        </div>
+    <header class="header">
+        <h1 class="header-title">Theralux Group</h1>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="tile" id="medical">
-                <h2>Theralux Medical</h2>
-                <p>Revolutionizing healthcare with cutting-edge technology.</p>
-                <a href="https://theraluxmedical.com" target="_blank">Visit Website</a>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <div class="tile" style="background-image: url('https://source.unsplash.com/random/800x600?medical')">
+                    <div class="tile-content">
+                        <h2>Theralux Medical</h2>
+                        <p>Innovative healthcare solutions for tomorrow's medicine</p>
+                        <a href="#" class="tile-button">Explore</a>
+                    </div>
+                </div>
             </div>
-            <div class="tile" id="consulting">
-                <h2>Theralux Consulting</h2>
-                <p>Expert solutions for your business challenges.</p>
-                <a href="https://theraluxconsulting.com" target="_blank">Visit Website</a>
+            <div class="carousel-item next">
+                <div class="tile" style="background-image: url('https://source.unsplash.com/random/800x600?consulting')">
+                    <div class="tile-content">
+                        <h2>Theralux Consulting</h2>
+                        <p>Strategic business solutions for digital transformation</p>
+                        <a href="#" class="tile-button">Explore</a>
+                    </div>
+                </div>
             </div>
-            <div class="tile" id="software">
-                <h2>Theralux Software</h2>
-                <p>Building software that transforms industries.</p>
-                <a href="https://theraluxsoftware.com" target="_blank">Visit Website</a>
+            <div class="carousel-item">
+                <div class="tile" style="background-image: url('https://source.unsplash.com/random/800x600?software')">
+                    <div class="tile-content">
+                        <h2>Theralux Software</h2>
+                        <p>Cutting-edge technology solutions for enterprise needs</p>
+                        <a href="#" class="tile-button">Explore</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Theralux Group. All rights reserved.</p>
+        
+        <div class="carousel-controls">
+            <button class="control-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="indicators"></div>
+            <button class="control-btn next"><i class="fas fa-chevron-right"></i></button>
         </div>
-    </footer>
+    </div>
 
     <script src="tgroup/script.js"></script>
 </body>
