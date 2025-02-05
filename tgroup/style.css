@@ -19,17 +19,43 @@ body {
 
 .header {
     text-align: center;
-    padding: 2rem;
+    padding: 1.8rem;
+    padding-bottom: 0.5rem;
     animation: fadeIn 1.5s ease-in;
 }
 
 .header-title {
-    color: white;
-    font-size: 3rem;
+    position: relative;
+    font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    text-shadow: 0 0 15px var(--secondary-color);
+    color: white;
+    text-align: center;
+    transition: text-shadow 0.1s ease-out;
 }
+
+summary {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.summary-text {
+    position: relative;
+    font-size: clamp(0.6rem, 2vw, 0.8rem); /* Dynamically scales with screen */
+    max-width: 120ch; /* Limits width by character count */
+    line-height: 1.6; /* Improves readability */
+    letter-spacing: 0.1rem;
+    color: white;
+    text-align: center;
+    margin: 0 auto; /* Ensures perfect centering */
+    transition: text-shadow 0.1s ease-out;
+    word-wrap: break-word; /* Prevents overflow */
+}
+
+
 
 .carousel-container {
     position: relative;
